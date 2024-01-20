@@ -1,0 +1,141 @@
+:root {
+    --clr-bg:#040030;
+    --clr-neon:#FF5F9E;
+    --clr-xide: #E90064;
+    --clr-opt:#B3005E;
+}
+
+body {
+    
+    background-image: url(img/neon-bg.jpg) !important;
+    background-size: cover;
+    /* background: var(--clr-bg); */
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar {
+    height: 100vh;
+    /* height: 100%; */
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button {
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 3rem;
+    text-decoration: none;
+    border-radius: 0.25em;
+    text-shadow: 1px 1px black;
+}
+
+.button-neon {
+    color: var(--clr-neon);
+    border: var(--clr-neon) 0.128em solid;
+    text-shadow: 
+    0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.5em currentColor ;
+    box-shadow: 
+    inset 0 0 0.5em 0 var(--clr-neon),
+    0 0 0.5em 0 var(--clr-neon);
+    
+}
+
+.button-xide {
+    color:var(--clr-xide);
+    border: var(--clr-xide) 0.128em solid;
+    text-shadow: 
+    0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.5em currentColor ;
+    box-shadow: 
+    inset 0 0 0.5em 0 var(--clr-xide),
+    0 0 0.5em 0 var(--clr-xide);
+}
+
+.button-neon:hover {
+    background: var(--clr-neon) ;
+    /* color:var(--clr-bg); */
+    color: #fff;
+    text-shadow: 2px 2px black;
+    box-shadow: 
+    
+    0 0 0.75em 0 var(--clr-neon);
+}
+.button-xide:hover {
+    background:var(--clr-xide);
+    /* color:var(--clr-bg); */
+    color: #fff;
+    text-shadow: 2px 2px black;
+    box-shadow: 
+    
+    0 0 0.75em 0 var(--clr-xide);
+}
+
+.button-neon:active {
+    background: var(--clr-neon) ;
+    color: #a7a7a7;
+    text-shadow: 3px 3px black;
+    box-shadow: 
+    0 0 0.88em 0 var(--clr-neon);
+}
+.button-xide:active {
+    background:var(--clr-xide);
+    color: #a7a7a7;
+    text-shadow: 3px 3px black;
+    box-shadow: 
+    
+    0 0 0.88em 0 var(--clr-xide);
+}
+
+@media (max-width: 700px) {
+    .nav-bar {
+        gap: 4rem;
+    }
+    .button {
+    padding: 0.45rem 1.8rem;
+    font-size: 2.8rem;
+}
+}
+
+@media (max-width: 529px) {
+    .nav-bar {
+        gap: 3rem;
+    }
+    .button {
+    padding: 0.4rem 1.5rem;
+    font-size: 2.4rem;
+}
+}
+
+@media (max-width: 414px) {
+    .nav-bar {
+        gap: 2.8rem;
+    }
+    .button {
+    padding: 0.35rem 1.45rem;
+    font-size: 2.2rem;
+}
+}
+
+@media (max-width: 352px) {
+    .nav-bar {
+        gap: 2.6rem;
+        flex-direction: column;
+    }
+    .button-neon {
+    padding: 0.30rem 1.40rem;
+    font-size: 2rem;
+}
+    .button-xide {
+        padding: 0.35rem 1.45rem;
+        font-size: 2.2rem;
+    }
+}
+
+
+
+
